@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fullPage {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+.firstHalf {
+    background-color: black;
+    width: 50%;
+    position: relative;
+    border: solid blue 2px;
+}
+
+.firstHalf > h1 {
+    color: white;
+    border: solid 2px white;
+    font-size: 15em;
+    position: absolute;
+    right: 0;
+    top: 13%;
+}
+
+.secondHalf {
+    background-color: rgb(199, 199, 199);
+    min-width: 50%;
+    position: relative;
+    border: 2px rgb(255, 0, 0) solid;
+}
+
+.secondHalf > h1 {
+    color: white;
+    border: solid 2px white;
+    font-size: 15em;
+    position: absolute;
+    left: 0;
+    top: 13%;
+}
+
+.navBar2 {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+
+.navBar2 > a {
+    color: rgb(7, 83, 7);
+}
