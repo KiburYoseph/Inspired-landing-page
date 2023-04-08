@@ -12,10 +12,12 @@ body {
 
 
 .firstHalf {
-    background-color: black;
+    background-image: url(../Images/Background-Image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
     width: 50%;
     position: relative;
-    border: solid blue 2px;
 }
 
 .firstHalf > h1 {
@@ -41,6 +43,12 @@ body {
     position: absolute;
     left: 0;
     top: 13%;
+    background: url(../Images/Background-Image.jpg) 0 0 / cover no-repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+
 }
 
 .navBar2 {
