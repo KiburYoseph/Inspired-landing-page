@@ -1,3 +1,21 @@
+
+
+@keyframes arrowhover {
+    33% {
+        transform: translateX(1em);
+    }
+    66% {
+        transform: translateX(-1em);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.arrow:hover {
+    animation: arrowhover 600ms;
+}
+
 .navBar2 > a:hover::after{
     width: 100%;
     background-color: aqua;

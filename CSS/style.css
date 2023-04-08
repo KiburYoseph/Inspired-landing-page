@@ -9,7 +9,10 @@ body {
     display: flex;
     min-height: 100vh;
     min-width: 100vw;
+    overflow: hidden;
 }
+
+
 
 
 .firstHalf {
@@ -32,10 +35,63 @@ body {
     font-weight: 800;
 }
 
+.bottomContent {
+    min-width: 100%;
+    position: absolute;
+    bottom: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rightContent {
+    color: white;
+}
+
+.rightContent > h3{
+    color: hsla(0, 10%, 94%, 0.9);
+    line-height: 0;
+}
+
+.rightContent > h2 {
+    max-width: max-content;
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 4.3rem); 
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.rightContent > p {
+    padding-right: 2em;
+    font-size: clamp(0.2rem, 1vw, 1.1rem); 
+    color: hsla(0, 10%, 94%, 0.9);
+}
+
+.arrowAndLm {
+    display: flex;
+    gap: 3em;
+    position: relative;
+}
+
+
+.arrow {
+    width: clamp(3em, 8vw, 8em); 
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 .secondHalf {
     background-color: rgb(230, 230, 230);
-    min-width: 50%;
+    width: min(50%, 100%);
     position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .secondHalf > h1 {
@@ -53,6 +109,8 @@ body {
 }
 
 .navBar2 {
+    position: sticky;
+    bottom: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -78,8 +136,6 @@ body {
     transition: 400ms;
 }
 
-
-
 .burger {
     max-width: clamp(0.2em, 2vw, 1.4em);
     align-self: center;
@@ -87,3 +143,8 @@ body {
     transition: 300ms;
 }
 
+.numbers {
+    max-width: 40%;
+    position: relative;
+    left: 36%;
+}
