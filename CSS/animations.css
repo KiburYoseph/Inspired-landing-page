@@ -72,7 +72,6 @@
 }
 
 .ACircle:hover {
-    animation: circles 200ms;
-    animation-play-state: running;
+    animation: circles 200ms forwards;
     animation-duration: 1s;
  }
