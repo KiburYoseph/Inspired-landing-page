@@ -71,6 +71,74 @@ body {
     justify-content: flex-end;
 }
 
+.leftContent{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-inline: 0.8em;
+    position: relative;
+    margin-right: 0.2em;
+    margin-left: clamp(0.2em, 4.7vw, 7em);
+}
+
+.leftContent > p {
+    position: absolute;
+    min-width: max-content;
+    right: clamp(0.1em, 12vw, 5em);
+    top: clamp(0.1em, 2vw, 9em);
+    z-index: 2;
+    font-size: clamp(0.1em, 1vw, 1em);
+    font-weight: 500;
+}
+
+.scroller {
+    display: flex;
+    position: relative;
+}
+
+.scroller > h2 {
+    font-weight: 700;
+    opacity: 0.6;
+    position: relative;
+    margin: 0;
+    font-size: clamp(2em, 7vw, 6.3em);
+}
+
+.scrolls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: clamp(0.2em, 4vw, 3em);;
+}
+
+.scrolls > img {
+    max-height: clamp(0.2em, 0.9vw, 0.9em);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.2em, 1vw, 0.8em);
+}
+
+.ACircle {
+    background-color: rgb(194, 194, 194);
+    height: clamp(0.4em, 1vw, 1.2em);
+    min-width: clamp(0.4em, 1vw, 1.2em);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
 .rightContent {
     color: white;
 }
@@ -78,26 +146,28 @@ body {
 .rightContent > h3{
     color: hsla(0, 10%, 94%, 0.9);
     line-height: 0;
+    font-size: clamp(0.1rem, 3vw, 1.3rem); 
 }
 
 .rightContent > h2 {
     max-width: max-content;
     font-weight: 800;
-    font-size: clamp(2rem, 5vw, 4.3rem); 
+    font-size: clamp(0.2rem, 5vw, 3rem); 
     margin: 0;
     text-transform: uppercase;
 }
 
 .rightContent > p {
     padding-right: 2em;
-    font-size: clamp(0.2rem, 1vw, 1.1rem); 
+    font-size: clamp(0.2rem, 1vw, 0.9rem); 
     color: hsla(0, 10%, 94%, 0.9);
 }
 
 .arrowAndLm {
     display: flex;
-    gap: 3em;
+    gap: clamp(0.1rem, 5vw, 3rem);
     position: relative;
+    margin-right: 20px;
 }
 
 
@@ -158,7 +228,7 @@ body {
     content: "";
     border-bottom: 2px solid rgb(7, 28, 121);
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 0%;
     transition: 400ms;

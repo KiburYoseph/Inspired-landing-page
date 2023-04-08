@@ -52,3 +52,27 @@
 .contacts > img:hover {
     animation: iconsHover 600ms;
 }
+
+.contacts > .line:hover {
+    animation: arrowhover 1s;
+}
+
+#scrollUp:hover{
+    transform: translateY(-0.7em);
+}
+
+#scrollDown:hover{
+    transform: translateY(-0.7em);
+}
+
+@keyframes circles {
+    33%{
+        height: 0.1em;
+    }
+}
+
+.ACircle:hover {
+    animation: circles 200ms;
+    animation-play-state: running;
+    animation-duration: 1s;
+ }
