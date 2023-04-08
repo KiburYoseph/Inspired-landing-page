@@ -25,6 +25,34 @@ body {
     position: relative;
 }
 
+.contacts > .line {
+    max-width: clamp(2rem, 5vw, 4rem);
+    opacity: 0.8;
+}
+
+.contacts > h5 {
+    font-size: clamp(0.4rem, 1vw, 3rem);
+    color: white;
+}
+
+.contacts {
+    color: white;
+    padding-left: 3em;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin: 0;
+}
+
+.contacts > img {
+    max-height: clamp(0.2rem, 1.7vw, 1rem);
+    cursor: pointer;
+}
+
+.contacts > .facebook {
+    max-width: clamp(0.2rem, 5vw, 1rem);
+}
+
 .firstHalf > h1 {
     color: white;
     font-size: clamp(2rem, 15vw, 25rem); 
@@ -128,7 +156,7 @@ body {
 
 .navBar2 > a::after {
     content: "";
-    border-bottom: 2px solid #071c79;
+    border-bottom: 2px solid rgb(7, 28, 121);
     position: absolute;
     bottom: 0;
     left: 0;

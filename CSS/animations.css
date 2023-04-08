@@ -21,7 +21,7 @@
     background-color: aqua;
 }
 
-@keyframes burgerhover {
+@keyframes iconsHover {
     
     0% {
         rotate: 0deg;
@@ -42,9 +42,13 @@
 
 
 .burger:hover {
-    animation: burgerhover 500ms;
+    animation: iconsHover 500ms;
 }
 
 .burger:active {
     transform: translateY(-0.5em);
+}
+
+.contacts > img:hover {
+    animation: iconsHover 600ms;
 }
