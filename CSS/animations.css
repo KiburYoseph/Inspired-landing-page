@@ -1,0 +1,32 @@
+.navBar2 > a:hover::after{
+    width: 100%;
+    background-color: aqua;
+}
+
+@keyframes burgerhover {
+    
+    0% {
+        rotate: 0deg;
+    }
+
+    33% {
+        rotate: 20deg;
+    }
+
+    66% {
+        rotate: -20deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+
+.burger:hover {
+    animation: burgerhover 500ms;
+}
+
+.burger:active {
+    transform: translateY(-0.5em);
+}

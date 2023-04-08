@@ -78,12 +78,12 @@ body {
     transition: 400ms;
 }
 
-.navBar2 > a:hover::after{
-    width: 100%;
-    background-color: aqua;
-}
+
 
 .burger {
     max-width: clamp(0.2em, 2vw, 1.4em);
     align-self: center;
+    cursor: pointer;
+    transition: 300ms;
 }
+
