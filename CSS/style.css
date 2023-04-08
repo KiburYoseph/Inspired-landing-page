@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .fullPage {
@@ -13,52 +14,71 @@ body {
 
 .firstHalf {
     background-image: url(../Images/Background-Image.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 70%;
     width: 50%;
+    height: auto;
     position: relative;
 }
 
 .firstHalf > h1 {
     color: white;
-    border: solid 2px white;
-    font-size: 15em;
+    font-size: clamp(2rem, 15vw, 25rem); 
     position: absolute;
+    width: min-content;
     right: 0;
-    top: 13%;
+    top: 4%;
+    font-weight: 800;
 }
 
 .secondHalf {
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(230, 230, 230);
     min-width: 50%;
     position: relative;
-    border: 2px rgb(255, 0, 0) solid;
 }
 
 .secondHalf > h1 {
     color: white;
-    border: solid 2px white;
-    font-size: 15em;
-    position: absolute;
+    font-size: clamp(2rem, 15vw, 25rem); 
+    position:absolute;
+    width: min-content;
     left: 0;
-    top: 13%;
+    top: 4%;
     background: url(../Images/Background-Image.jpg) 0 0 / cover no-repeat;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
-
+    -webkit-background-clip: text;  
+    font-weight: 800;
 }
 
 .navBar2 {
-    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 3%;
+    padding-top: 1.9%;
 }
 
 .navBar2 > a {
-    color: rgb(7, 83, 7);
+    color: rgb(7, 28, 121);
+    font-size: clamp(0.2em, 2vw, 1.1em); 
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navBar2 > a::after {
+    content: "";
+    border-bottom: 2px solid rgb(7, 28, 121);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    transition: 400ms;
+}
+
+.navBar2 > a:hover::after{
+    width: 100%;
+    background-color: aqua;
 }
