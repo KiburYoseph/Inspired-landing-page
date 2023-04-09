@@ -126,7 +126,7 @@ body {
 }
 
 .ACircle {
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(167, 167, 167);
     height: clamp(0.4em, 1vw, 1.2em);
     min-width: clamp(0.4em, 1vw, 1.2em);
     border-radius: 50%;

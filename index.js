@@ -7,10 +7,14 @@ const circleHeight = ACircle[1].style.height;
 
 function circleAnimation(element){
     if(ACircle.indexOf(element) == (page - 1)){
-            element.style.height = `0.1em`;
+            
+            element.style.height = "0.12em";
+            element.style.backgroundColor = `White`;
         }
     if(ACircle.indexOf(element) != (page - 1)){
         element.style.height = `${circleHeight}`
+        element.style.backgroundColor = `rgb(167, 167, 167)`;
+
     }
 }
 
