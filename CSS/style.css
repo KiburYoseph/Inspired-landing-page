@@ -113,7 +113,7 @@ body {
 }
 
 .scrolls > img {
-    max-height: clamp(0.2em, 0.9vw, 0.9em);
+    max-height: clamp(0.4em, 1.3vw, 12em);
     transition: 300ms;
     cursor: pointer;
 }
