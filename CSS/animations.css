@@ -75,3 +75,28 @@
     animation: circles 200ms forwards;
     animation-duration: 1s;
  }*/
+
+
+@keyframes movingBackground {
+    0% {
+        background-position-y: 70%;
+    }
+        
+    50% {
+        background-position-y: 65%;
+    }
+
+    100% {
+        background-position-y: 70%;
+    }
+}
+
+.firstHalf {
+    animation: movingBackground 25s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.secondHalf > h1 {
+    animation: movingBackground 25s infinite;
+    animation-timing-function: ease-in-out;
+}
